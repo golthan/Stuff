@@ -1,0 +1,28 @@
+De bai
+Phần I
+Bài 1: Hãy viết lại chương trình C++ sau bằng cách sử dụng lại các dòng nhập/xuất trong Java.
+
+/* Chương trình tìm mẫu chung nhỏ nhất */
+#include <stdio.h>
+int main()
+{
+int a,b,i,min;
+printf("Nhap vao hai so:"); scanf("%d%d",&a,&b); min=a>b?b:a;
+for(i = 2;i<min;++i)
+if (((a%i)==0)&&((b%i)==0)) break;
+if(i==min) {
+printf("Khong co mau chung nho nhat");
+return 0;
+}
+printf("Mau chung nho nhat la %d\n",i);
+return 0;
+}
+Bài 2 : Một tam giác vuông có thể có tất cả các cạnh là các số nguyên.
+Tập của ba số nguyên của các cạnh của một tam giác vuông được gọi là bộ ba Pitago. 
+Đó là tổng bình phương của hai cạnh bằng bình phương của cạnh huyền, chẳng hạn bộ ba Pitago (3, 4, 5).
+Viết chương trình tìm tất cả các bộ ba Pitago như thế sao cho tất cả các cạnh không quá 500.
+
+Bài 3: Viết chương trình tạo một mảng một chiều động có kích thước là n (n nhập từ bàn phím).
+Các giá trị của mảng này được phát sinh ngẫu nhiên trên đoạn [a, b] với a và b đều nhập từ bàn phím.
+Hãy tìm số dương nhỏ nhất và số âm lớn nhất trong mảng;
+nếu không có số dương nhỏ nhất hoặc số âm lớn nhất thì xuất thông báo "không có số dương nhỏ nhất" hoặc "không có số âm lớn nhất".
